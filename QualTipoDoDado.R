@@ -72,12 +72,28 @@ dist_freq_qualitativas
 
 
 
+frequencia <- table(dados$Sexo,dados$Cor)
+frequencia
 
+rownames(frequencia) <- c('Masculino', 'Feminino')
+colnames(frequencia) <- c('Indigina','Branca','Preta','Amerela', 'Parda')
 
+frequencia <-cbind(frequencia)
 
+percentual <- prop.table(frequencia) * 100
 
+list(c(1,2,3,4),c(5,6,7))
 
+#tapply vc pega o que quer medir e lista oquer mostrar depois fala o que vc quer fazer qual calculo
+#dentro do "tapply", a concatenação disso tudo. Quando for do sexo masculino e indígena, 
+#ele vai calcular a média de todo mundo. E assim sucessivamente.
+medias <- tapply(dados$Renda,list(dados$Sexo,dados$Cor),mean)
 
+rownames(medias) <- c('Masculino', 'Feminino')
+
+colnames(medias) <- c('Indigina','Branca','Preta','Amerela', 'Parda')
+
+medias
 
 
 
