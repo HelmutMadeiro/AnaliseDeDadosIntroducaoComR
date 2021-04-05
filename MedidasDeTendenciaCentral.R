@@ -109,7 +109,7 @@ mediana
 media <- mean(dados$Altura)
 media
 
-
+#A relação MÉDIA < MEDIANA < MODA indica que a distribuição é assimétrica à esquerda.
 
 #Avaliando a variável ANOS DE ESTUDO  \ Assimetrica a Esquerda
 
