@@ -224,7 +224,12 @@ ggplot(bar_chart, aes(x = rownames(bar_chart), y = bar_chart$Frequencia)) +
 
 
 
+#O Histograma é a representação gráfica de uma distribuição de frequências. 
+#É um gráfico formado por um conjunto de retângulos, colocados lado a lado, 
+#onde a área de cada retângulo é proporcional à frequência da classe que ele representa
 
+
+#Com o Histograma, podemos ter uma melhor ideia de como os dados se distribuem.
 
 
 
